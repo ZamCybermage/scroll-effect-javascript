@@ -25,6 +25,7 @@ function scrollEffect(target,duration){
     }
 
     //easing function
+    //Functions retrieved from:http://www.gizma.com/easing/
 
     Math.easeOutCubic = function (t, b, c, d) {
     	t /= d;
@@ -32,17 +33,24 @@ function scrollEffect(target,duration){
     	return c*(t*t*t + 1) + b;
     };
 
-
     //will loop through at 60 fps
     requestAnimationFrame(scrollAnimation);
 }
 
 
 
-
+//Scrolls down when link is clicked
 var link_1 = document.querySelector('.link-1');
+//Scrolls back up when link is clicked
+var link_2 = document.querySelector('.link-2');
 link_1.addEventListener('click',function(){
 
-  //Animation of function duration in 1000 millisecs
+  //Animation of link_1 duration in 1000 millisecs
   scrollEffect('.link-2', 1000);
   });
+
+  link_2.addEventListener('click',function(){
+
+    //Animation of link_1 back upwards duration in 1000 millisecs
+    scrollEffect('.link-1', 1000);
+    });
