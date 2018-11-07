@@ -13,12 +13,17 @@ function scrollEffect(target,duration){
     var _distance  = targetDestination - initPosition;
   //starting time
     var _initTime = null;
+
+
+    function scrollAnimation(currentTime){
+         if(_initTime === null) _initTime = currentTime;
+    }
+
 }
 
 
-function scrollAnimation(){
-  
-}
+
+
 
 
 //Animation of function duration
