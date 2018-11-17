@@ -2,6 +2,12 @@
 
 /* ===============Styling for Document================= */
 
+body{
+  font-family: "helvetica", sans-serif;
+}
+
+
+
 
 .container-1{
   height: 100vh;
@@ -17,4 +23,29 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.link-1, .link-2{
+  text-decoration: none;
+  font-size: 30px;
+  color:  purple;
+  border: 1px solid #fff;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+
+.link-1:hover{
+  background-color: #009900;
+}
+
+
+.link-1:link, .link-2:link{
+  color: purple;
+}
+
+.link-1:visited{
+  color: #fff;
 }
